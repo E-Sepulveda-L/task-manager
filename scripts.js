@@ -12,7 +12,7 @@ const day = document.getElementById('creation-day');
 const month = document.getElementById('creation-month');
 const year = document.getElementById('creation-year');
 
-let selectedColor = '#ffffff';
+let selectedColor = '#6167698a';
 newTask.addEventListener('click', () => {
     panel.style.display = 'flex'
 });
@@ -22,7 +22,7 @@ close.addEventListener('click', () => {
 colors.forEach(color => color.addEventListener('click', () => {
     selectedColor = `#${color.id}`;
     colors.forEach(c => c.style.outline = '');
-    color.style.outline = '2px solid black';
+    color.style.outline = '2px solid #aac93b';
 }));
 
 addTask.addEventListener('click', () => {
@@ -30,9 +30,14 @@ addTask.addEventListener('click', () => {
     task.className = 'task';
     task.style.backgroundColor = selectedColor
     
+    const label = document.createElement('label');
+
     const checkbox = document.createElement('input');
     checkbox.className = 'checkbox';
     checkbox.type = 'checkbox';
+
+    const check = document.createElement('div');
+    check.className = 'checkbox-action';
     
     const taskContent = document.createElement('div');
     taskContent.className = 'task-content';
@@ -55,12 +60,14 @@ addTask.addEventListener('click', () => {
     deleteTask.addEventListener('click', () => {
         task.remove()
     });
-    
+
+    label.appendChild(checkbox)
+    label.appendChild(check)
 
     taskContent.appendChild(taskTitle);
     taskContent.appendChild(taskDescription);
     taskContent.appendChild(taskDate);
-    task.appendChild(checkbox)
+    task.appendChild(label)
     task.appendChild(taskContent)
     task.appendChild(deleteTask)
     taskBody.appendChild(task)
