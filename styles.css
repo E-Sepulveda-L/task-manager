@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --padding-1: 2vh;
+    --padding-2: 3vh;
+    --padding-3: .5vh;
+}
+input{
+    padding: .6rem;
+    height: 2rem;
+}
+/* ========================= GENERAL ========================= */
+body{
+    width: 100-5;
+    height: 100vh;
+    background-color: palegoldenrod;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+}
+main{
+    padding: var(--padding-1);
+    width: 40rem;
+    aspect-ratio: 1/1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-1);
+    position: relative;
+    background-color: palegreen;
+}
+#task-creation{
+    padding: var(--padding-2);
+    width: 20.5rem;
+    aspect-ratio: 1/.9;
+    display: fleX;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--padding-1);
+    position: absolute;
+    background-color: aliceblue;
+}
+#task-creation > label:nth-child(3){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#task-creation > label:nth-child(3) input{
+    width: 4rem;
+}
+#task-creation > div:nth-child(4){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--padding-1);
+    /* background-color: palegreen; */
+}
+#task-creation > div:nth-child(4) span{
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+#a6f4b5{
+    background-color: #a6f4b5;
+}
+#c68ff1{
+    background-color: #c68ff1;
+}
+#ff8ab5{
+    background-color: #ff8ab5;
+}
+#fec17a{
+    background-color: #fec17a;
+}
+#CEE7E6{
+    background-color: #CEE7E6;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: paleturquoise;
+}
+#task-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-1);
+    background-color: papayawhip;
+}
+.task{
+    padding: var(--padding-3);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--padding-3);
+    background-color: plum;
+}
+.task-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: var(--padding-3);
+    background-color: rgb(202, 154, 106);
+}

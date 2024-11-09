@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <main>
+        <section id="task-creation">
+            <label>
+                Title
+                <input type="text" id="creation-title">
+            </label>
+            <label>
+                Description
+                <input type="text" id="creation-description">
+            </label>
+            <label>
+                Date 
+                <input type="number" id="creation-day">
+                <input type="number" id="creation-month">
+                <input type="number" id="creation-year">
+            </label>
+            <div id="colors">
+                <span id="a6f4b5"></span>
+                <span id="c68ff1"></span>
+                <span id="ff8ab5"></span>
+                <span id="fec17a"></span>
+                <span id="CEE7E6"></span>
+            </div>
+            <div>
+                <button id="close-creation">Close</button>
+                <button id="add-task">Add task</button>
+            </div>
+        </section>
+        <header>
+            <h1 id="title">Task manager</h1>
+            <button id="new-task">New task</button>
+        </header>
+        <section id="task-body">
+            <div class="task">
+                <input class="checkbox" type="checkbox" >
+                <div class="task-content">
+                    <h3 class="task-title">Task title</h3>
+                    <p class="task-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, sunt?</p>
+                    <span class="task-date">DD/MM/AA</span>
+                </div>
+                <button class="detele-task">Delete</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
